@@ -1,0 +1,399 @@
+
+:root {
+    --primary-color: #284a2c;
+    --secondary-color: #4a7553;
+    --accent-color: #c7d8c8;
+    --text-color: #333;
+    --light-bg: #f5f7f5;
+    --white: #fff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+  
+  }
+  
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 img {
+    margin-right: 1rem;
+    width: 32px;
+    height: 32px;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  nav#drop {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+  }
+  
+  nav#drop ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav#drop a {
+    display: block;
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  nav#drop a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+  }
+  
+  nav#drop li {
+    margin: 0 0.3rem;
+  }
+  
+  nav#drop li.clearbg {
+    background: none;
+  }
+  
+  .langbg {
+    display: flex;
+    align-items: center;
+  }
+  
+  .langbg img {
+    height: 20px;
+    width: auto;
+  }
+
+  #front {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/baug1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 2rem 0;
+    color: var(--white);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #front header {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  #hgomb {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .hgomb {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .hgomb:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hgomb img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .hgomb p {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+  
+  #content, #content2, #content3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+  }
+
+  #tevekenysegeink {
+    background-color: var(--white);
+  }
+  
+  #cleft {
+    width: 70%;
+    float: left;
+    padding-right: 2rem;
+  }
+  
+  #cright {
+    width: 30%;
+    float: right;
+  }
+  
+  #cright a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  #cright div {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  #cright div:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+  
+  #cright .kg {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  #cright p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  #referenciak {
+    background-color: var(--light-bg);
+  }
+  
+  .aktualisref iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+  }
+
+  #cegunkrol {
+    background-color: var(--white);
+  }
+  #kapcsolat {
+    background-color: var(--light-bg);
+  }
+  
+  #kapinfo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  #c2left {
+    width: 70%;
+    float: left;
+  }
+  
+  #c2right {
+    width: 30%;
+    float: right;
+  }
+  
+  #nev {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  #c2left p {
+    margin-bottom: 1.5rem;
+  }
+
+  #allasajanlat {
+    background-color: var(--white);
+  }
+  
+  #allasbg {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  #allas p {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  #munka1, #munka2, #munka5 {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+  }
+  
+  #munka1 div, #munka2 div, #munka5 div {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  table td:first-child {
+    font-weight: 600;
+    width: 30%;
+  }
+
+  #adatkezeles {
+    background-color: var(--light-bg);
+  }
+
+  iframe[src*="google.com/maps"] {
+    width: 100%;
+    height: 450px;
+    border: none;
+    margin-top: 2rem;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #fixmenu {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+  }
+  
+  #fixmenu ul {
+    list-style: none;
+  }
+  
+  #fixmenu a {
+    display: block;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+  }
+  
+  #fixmenu a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+  }
+  
+  #fixmenu img {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 880px) {
+    #cleft, #cright, #c2left, #c2right {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .hgomb {
+      width: 90%;
+      max-width: 280px;
+    }
+    
+    #content, #content2, #content3 {
+      padding: 0 1rem;
+    }
+  }
